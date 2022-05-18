@@ -31,7 +31,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
+
     /* transform-translate 變換自身的位子 */
 }
 
@@ -40,6 +40,7 @@
     display: flex;
     height: 100px;
     width: 200px;
+
 
     /* relative 相對位置 定位尋找position */
     /* number 包了one&zero */
@@ -51,17 +52,16 @@
     height: 40px;
     width: 20px;
     background: #fff;
-    transform: translate(-1px, 0px) rotate(50deg);
+    transform: translate(-15px, 0px) rotate(50deg);
     box-shadow: 0 0 13px 0 rgba (0, 0, 0, 0.2);
     z-index: 1;
-    left: -16px;
     border-radius: 3px;
 
 
 }
 
 .one-two {
-    position: absolute;
+    position: relative;
     height: 100px;
     width: 24px;
     background: #fff;
@@ -72,12 +72,12 @@
 }
 
 .zero {
-    position: absolute;
+    position: relative;
     box-sizing: border-box;
     height: 100px;
     width: 100px;
     border-radius: 50%;
-    border: 24px soild white;
+    border: 24px solid white;
     box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2);
     margin-left: -17px;
 
