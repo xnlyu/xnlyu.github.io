@@ -1,0 +1,39 @@
+.body {
+    margin: 0%;
+    /* 上下左右保持無空隙 */
+}
+
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    background: url(./bg.jpeg);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    /* vw & vh 可符合螢幕大小 數字為可視%*/
+}
+
+.btn {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin-left: 20px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.big {
+    font-weight: bold;
+    font-size: 30pt;
+    color: yellow;
+}
+
+.small {
+    font-size: 15pt;
+    color: white;
+}

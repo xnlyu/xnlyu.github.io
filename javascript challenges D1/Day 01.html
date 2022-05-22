@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javescript challenges Day1</title>
+    <link rel="stylesheet" href="Day 01.css">
+</head>
+
+<body onkeydown="keydown(event)">
+
+    <!-- onkeydown 是javescript 當按下按鍵時 -->
+
+    <main class="main">
+        <button class="btn" onclick="play('kick')">
+            <div class="big">A</div>
+            <div class="small">kick</div>
+        </button>
+        <button class="btn" onclick="play('openhat')">
+            <div class="big">S</div>
+            <div class="small">openhat</div>
+        </button>
+        <audio id="kick" src="./js_1_kick.wav"></audio>
+        <audio id="openhat" src="./js_1_openhat.wav"></audio>
+    </main>
+
+    <!-- main 裡面都在做命名和事件規劃 -->
+    <!-- onclick 是javescript 當事件被觸發時 -->
+
+    <script>
+
+        // function 是函式 意旨執行上面main建立的paly(id) 
+        // const 為假設 假設我要觸發的audio是document(現在這個資料夾).(的)getElementById(id)(該元素與該身份)
+        // audio.currentTime 可以讓按鍵觸發的音樂時間點重新開始
+
+        function play(id) {
+            const audio = document.getElementById(id)
+            audio.currentTime = 0
+            audio.play();
+        }
+
+        // object 作為一個企劃 裡面包含了誰是誰
+        // object 需要一個key來做相對應的輸出
+        // 假設了字串  'a': 'kick', 's': 'openhat'
+
+        function keydown(event) {
+            const key = event.key
+            const obj = {
+                'a': 'kick',
+                's': 'openhat'
+            }
+
+                if (obj[key]) {
+                play(obj[key])
+            }
+
+
+        }
+
+
+
+    </script>
+
+
+</body>
+
+</html>
