@@ -1,10 +1,12 @@
 function myFunction(){
-	// document.getElementById("menu").classList.add('active');
 	document.getElementById("menu").classList.toggle('active');
 	document.getElementById("menu").classList.remove('noAnimation');
 }
+	// document.getElementById("menu").classList.add('active');
 
-document.getElementById('menu').addEventListner('click', myFunction)
+document.getElementById('menu').addEventListener('click', myFunction)
+
+console.log(document.getElementById('menu').addEventListener)
 
 // //抽出來 變數
 // document.getElementById('menu').addEventListner('click', function(){

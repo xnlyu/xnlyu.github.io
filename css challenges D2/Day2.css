@@ -16,9 +16,7 @@
     border-radius: 3px;
     box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    background: #fff;
-    /* 兩個顏色 */
-    color: #333;
+       color: #333;
     background: #386273;
     font-family: "Open Sans", Helvetica, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -88,7 +86,7 @@
 }
 
 .active .line-3 {
-    animation: open2 0.5s forwards;
+    animation: open3 0.5s forwards;
 }
 
 
@@ -207,7 +205,7 @@
 
 }
 
-@keyframes open3 {
+@keyframes close3 {
     0% {
         top: 21px;
         transform: rotate(-45deg);
